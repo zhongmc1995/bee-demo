@@ -10,11 +10,21 @@
 <html>
 <head>
     <title>Hello</title>
+    <link href="resources/asset/css/style.css" rel="stylesheet" type="text/css" >
+    <script src="asset/js/common.js" type="application/javascript"></script>
 </head>
 <body>
-    ${student.id}
-    ${student.name}
-    ${student.gender}
-    ${student.sex}
+    <div class="box" style="background-image: url('resources/asset/image/bg.jpg')">
+        <ul>
+            <c:forEach items="${students}" var="student">
+                <li>
+                    ${student.id}
+                    ${student.name}
+                    ${student.gender}
+                    ${student.sex}
+                </li>
+            </c:forEach>
+        </ul>
+    </div>
 </body>
 </html>

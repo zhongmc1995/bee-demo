@@ -9,6 +9,13 @@ public class Student {
     private String gender;
     private String sex;
 
+    public Student(String id, String name, String gender, String sex) {
+        this.id = id;
+        this.name = name;
+        this.gender = gender;
+        this.sex = sex;
+    }
+
     public String getId() {
         return id;
     }
